@@ -13,208 +13,191 @@
 <!-- Navbar Start -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container-fluid">
+        <a class="navbar-brand" href="#">📱 Mobile Shop</a>
 
-        <a class="navbar-brand d-flex align-items-center" href="#">
-            📱 <span class="ms-2">Mobile Shop</span>
-        </a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarNav">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About Us</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="services.html">Services</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link active bg-danger" href="products.html">Products</a>
-                </li>
-
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link active bg-danger" href="products.html">Products</a></li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button"
-                        data-bs-toggle="dropdown">
-                        Gallery
-                    </a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Gallery</a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="photo_gallery.html">Photo Gallery</a></li>
                         <li><a class="dropdown-item" href="video_gallery.html">Video Gallery</a></li>
                     </ul>
                 </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact Us</a>
-                </li>
-
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>
         </div>
     </div>
 </nav>
 <!-- Navbar End -->
 
-
 <!-- Products Section -->
 <section class="mt-4">
     <div class="container">
         <h2 class="text-center mb-4">Our Products</h2>
-
         <div class="row g-4">
 
-    <!-- Product 1 -->
-    <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-            <img src="images/Samsung-Galaxy-A06-2.png" class="card-img-top" alt="Samsung">
-            <div class="card-body text-center">
-                <h5 class="card-title">Samsung Galaxy</h5>
-                <p class="card-text">Powerful performance with modern design.</p>
-                <p class="fw-bold text-primary">₹12,999</p>
-                <button class="btn btn-primary btn-sm">View Details</button>
+            
+
+            <!-- Samsung -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow">
+                    <img src="images/Samsung-Galaxy-A06-2.png" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5>Samsung Galaxy</h5>
+                        <p>Reliable performance and quality.</p>
+                        <p class="fw-bold text-primary">₹15,999</p>
+                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="Samsung Galaxy"
+                            data-desc="Samsung Galaxy smartphones deliver powerful performance, a vibrant AMOLED display, and a high-quality camera system for everyday use. With long battery life, fast charging support, and a smooth One UI experience, Samsung Galaxy offers reliability, style, and advanced features at an affordable price."
+                            data-price="₹15,999"
+                            data-img="images/Samsung-Galaxy-A06-2.png">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vivo -->
+             <div class="col-md-4">
+                <div class="card h-100 shadow">
+                    <img src="images/vivo-y300-5g-front-back-design.png" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5>Vivo Y Series</h5>
+                        <p>Best camera experience.</p>
+                        <p class="fw-bold text-primary">₹14,499</p>
+                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="Vivo Y Series"
+                            data-desc="Vivo smartphones are designed to deliver an excellent camera experience, smooth performance, and stylish design. With AI-powered cameras, long-lasting battery life, and a user-friendly interface, Vivo phones are ideal for photography, entertainment, and daily multitasking."
+                            data-price="₹14,499"
+                            data-img="images/vivo-y300-5g-front-back-design.png">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div> 
+
+            <!-- Oppo -->
+             <div class="col-md-4">
+                <div class="card h-100 shadow">
+                    <img src="images/oppo-a5-pro-5g-front-and-back-2.png" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5>Oppo A Series</h5>
+                        <p>Fast charging support.</p>
+                        <p class="fw-bold text-primary">₹16,999</p>
+                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="Oppo A Series"
+                            data-desc="Oppo A5 Pro offers a sleek design, smooth performance, and fast charging support for everyday use. Equipped with a capable camera system and long-lasting battery, it delivers reliable multitasking and entertainment while maintaining a premium look at an affordable price."
+                            data-price="₹16,999"
+                            data-img="images/oppo-a5-pro-5g-front-and-back-2.png">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div> 
+
+            <!-- Oneplus -->
+             <div class="col-md-4">
+                <div class="card h-100 shadow">
+                    <img src="images/oneplus.png" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5>OnePlus Nord</h5>
+                        <p>Flagship level performance.</p>
+                        <p class="fw-bold text-primary">₹21,999</p>
+                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="OnePlus Nord"
+                            data-desc="OnePlus smartphones are built for speed and smooth performance, featuring powerful processors, a clean OxygenOS experience, and fast charging technology. With premium design, fluid display, and reliable cameras, OnePlus delivers a flagship-level experience for everyday use."
+                            data-price="₹21,999"
+                            data-img="images/oneplus.png">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div> 
+
+            <!-- Realme -->
+             <div class="col-md-4">
+                <div class="card h-100 shadow">
+                    <img src="images/realme.png" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5>Realme 5G</h5>
+                        <p>High speed connectivity.</p>
+                        <p class="fw-bold text-primary">₹13,999</p>
+                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="Realme 5G"
+                            data-desc="Realme smartphones are known for delivering powerful performance, modern design, and long-lasting battery life at an affordable price. With fast charging support, smooth display, and reliable cameras, Realme devices are ideal for gaming, entertainment, and daily use."
+                            data-price="₹13,999"
+                            data-img="images/realme.png">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div> 
+
+            <!-- Redmi Note -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow">
+                    <img src="images/redmi.jpg" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5>Redmi Note</h5>
+                        <p>Best value for money.</p>
+                        <p class="fw-bold text-primary">₹11,999</p>
+                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="Redmi Note"
+                            data-desc="Redmi smartphones offer excellent value with strong performance, large displays, and long-lasting battery life. Known for reliability and affordability, Redmi devices provide powerful features, good camera quality, and smooth multitasking for everyday use. "
+                            data-price="₹11,999"
+                            data-img="images/redmi.jpg">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div> 
+
+        </div>
+    </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="productModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"></h5>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img class="img-fluid mb-3" id="modalImg">
+                <p id="modalDesc"></p>
+                <h5 class="text-primary" id="modalPrice"></h5>
             </div>
         </div>
     </div>
-
-    <!-- Product 2 -->
-    <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-            <img src="images/vivo-y29-5g-front-and-back-1.png" class="card-img-top" alt="Vivo">
-            <div class="card-body text-center">
-                <h5 class="card-title">Vivo Y Series</h5>
-                <p class="card-text">Smooth camera and stylish look.</p>
-                <p class="fw-bold text-primary">₹14,499</p>
-                <button class="btn btn-primary btn-sm">View Details</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Product 3 -->
-    <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-            <img src="images/oppo-a5-pro-5g-front-and-back-2.png" class="card-img-top" alt="Oppo">
-            <div class="card-body text-center">
-                <h5 class="card-title">Oppo A Series</h5>
-                <p class="card-text">Fast charging with premium feel.</p>
-                <p class="fw-bold text-primary">₹15,999</p>
-                <button class="btn btn-primary btn-sm">View Details</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Product 4 -->
-    <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-            <img src="images/oneplus.png" class="card-img-top" alt="OnePlus">
-            <div class="card-body text-center">
-                <h5 class="card-title">OnePlus Nord</h5>
-                <p class="card-text">Flagship performance at best price.</p>
-                <p class="fw-bold text-primary">₹19,999</p>
-                <button class="btn btn-primary btn-sm">View Details</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Product 5 -->
-    <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-            <img src="images/realme.png" class="card-img-top" alt="Realme">
-            <div class="card-body text-center">
-                <h5 class="card-title">Realme 5G</h5>
-                <p class="card-text">High speed with strong battery life.</p>
-                <p class="fw-bold text-primary">₹13,999</p>
-                <button class="btn btn-primary btn-sm">View Details</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Product 6 -->
-    <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-            <img src="images/redmi.jpg" class="card-img-top" alt="Redmi">
-            <div class="card-body text-center">
-                <h5 class="card-title">Redmi Note</h5>
-                <p class="card-text">Best features at affordable price.</p>
-                <p class="fw-bold text-primary">₹11,999</p>
-                <button class="btn btn-primary btn-sm">View Details</button>
-            </div>
-        </div>
-    </div>
-
 </div>
 
-</section>
-
-
-<!-- Accessories Section -->
-<section class="mt-5 bg-light py-4">
-    <div class="container">
-        <h3 class="text-center mb-4">Mobile Accessories</h3>
-
-        <div class="row g-4">
-
-            <div class="col-md-3">
-                <div class="card text-center shadow-sm">
-                    <div class="card-body">
-                        <h5>Chargers</h5>
-                        <p>Fast & safe charging solutions.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="card text-center shadow-sm">
-                    <div class="card-body">
-                        <h5>Headphones</h5>
-                        <p>Clear sound & deep bass.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="card text-center shadow-sm">
-                    <div class="card-body">
-                        <h5>Mobile Covers</h5>
-                        <p>Stylish & protective cases.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="card text-center shadow-sm">
-                    <div class="card-body">
-                        <h5>Screen Guards</h5>
-                        <p>Scratch and break protection.</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-
-<!-- Footer Start -->
+          
+<!-- footer start -->
 <footer class="bg-primary text-white mt-5 pt-4">
     <div class="container">
         <div class="row">
 
+            <!-- About / Logo -->
             <div class="col-md-3 mb-3">
                 <h5 class="fw-bold">Mobile Shop</h5>
                 <p class="small">
                     We offer quality mobile phones, accessories, and reliable services
-                    at affordable prices.
+                    at affordable prices to meet everyday needs.
                 </p>
             </div>
 
+            <!-- Quick Links -->
             <div class="col-md-3 mb-3">
                 <h5 class="fw-bold">Quick Links</h5>
                 <ul class="list-unstyled">
@@ -225,6 +208,7 @@
                 </ul>
             </div>
 
+            <!-- Products -->
             <div class="col-md-3 mb-3">
                 <h5 class="fw-bold">Products</h5>
                 <ul class="list-unstyled">
@@ -235,27 +219,42 @@
                 </ul>
             </div>
 
+            <!-- Address -->
             <div class="col-md-3 mb-3">
-                <h5 class="fw-bold">Contact</h5>
-                <p class="small mb-1">Pimpri, Pune</p>
-                <p class="small mb-1">📞 9876543210</p>
-                <p class="small">✉ mobileshop@gmail.com</p>
+                <h5 class="fw-bold">Address</h5>
+                <p class="small mb-1">Pimpri, Pune, Maharashtra</p>
+                <p class="small mb-1"> Phone: 9890372004</p>
+                <p class="small"> Email: mobileshop@gmail.com</p>
             </div>
 
         </div>
 
         <hr class="border-light">
 
+        <!-- Footer Bottom -->
         <div class="text-center pb-3">
             <small>© 2026 Mobile Shop. All Rights Reserved.</small>
         </div>
     </div>
 </footer>
-<!-- Footer End -->
+<!-- footer end -->
+
 
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Modal Script -->
+ <script>
+const modal = document.getElementById('productModal');
+modal.addEventListener('show.bs.modal', event => {
+    const btn = event.relatedTarget;
+    modal.querySelector('.modal-title').textContent = btn.getAttribute('data-title');
+    document.getElementById('modalDesc').textContent = btn.getAttribute('data-desc');
+    document.getElementById('modalPrice').textContent = btn.getAttribute('data-price');
+    document.getElementById('modalImg').src = btn.getAttribute('data-img');
+});
+</script> 
 
 </body>
 </html>
