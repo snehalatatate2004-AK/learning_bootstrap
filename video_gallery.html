@@ -5,31 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video Gallery | Mobile Shop</title>
 
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
-<!-- Navbar -->
+<!-- Navbar Start -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container-fluid">
-        <a class="navbar-brand d-flex align-items-center" href="#">
-            📱 <span class="ms-2">Mobile Shop</span>
-        </a>
+        <!-- Logo + Name -->
+<a class="navbar-brand d-flex align-items-center" href="#">
+    <img src="images/icon_2.png" alt="Mobile Shop Logo"
+         width="35" height="35" class="me-2">
+    <span>Mobile Shop</span>
+</a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-
                 <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
                 <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link active bg-danger dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                    <a class="nav-link dropdown-toggle active bg-danger" href="#" data-bs-toggle="dropdown">
                         Gallery
                     </a>
                     <ul class="dropdown-menu">
@@ -38,53 +41,105 @@
                     </ul>
                 </li>
 
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>
         </div>
     </div>
 </nav>
+<!-- Navbar End -->
 
-<!-- Video Gallery -->
+<!-- Video Gallery Section -->
 <section class="mt-4">
     <div class="container">
         <h2 class="text-center mb-4">Video Gallery</h2>
 
         <div class="row g-4">
 
+            <!-- Video 1 -->
             <div class="col-md-4">
                 <div class="ratio ratio-16x9">
-                    <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/7cvDxw6rXUM?si=_UfECnzQQdzxkdMI"
+                        title="Samsung Mobile Review"
+                        allowfullscreen>
+                    </iframe>
                 </div>
+                <p class="text-center mt-2">Samsung Galaxy Review</p>
             </div>
 
+            <!-- Video 2 -->
             <div class="col-md-4">
                 <div class="ratio ratio-16x9">
-                    <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/iLnSa_I5sW4?si=13wFvEO4SUhJhxA8"
+                        title="Vivo Mobile Launch"
+                        allowfullscreen>
+                    </iframe>
                 </div>
+                <p class="text-center mt-2">Vivo Smartphone Launch</p>
             </div>
 
+            <!-- Video 3 -->
             <div class="col-md-4">
                 <div class="ratio ratio-16x9">
-                    <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/OLKroSWwD54?si=AD9f9rpg57LYAsQB"
+                        title="Oppo Mobile Camera Test"
+                        allowfullscreen>
+                    </iframe>
                 </div>
+                <p class="text-center mt-2">Oppo Camera Test</p>
+            </div>
+
+            <!-- Video 4 -->
+            <div class="col-md-4">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/meXU_Ksvf18?si=W9td-Xf2VymFSOrz" 
+                        title="OnePlus Performance Test"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <p class="text-center mt-2">OnePlus Performance</p>
+            </div>
+
+            <!-- Video 5 -->
+            <div class="col-md-4">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/oQhQwJW5i-w?si=jBdcxFgqV_9E5C4Y"
+                        title="Realme Unboxing"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <p class="text-center mt-2">Realme Unboxing</p>
+            </div>
+
+            <!-- Video 6 -->
+            <div class="col-md-4">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/rFGeFOoydLY?si=UFWHyxQXV1Qu3g4f"
+                        title="Redmi Mobile Review"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <p class="text-center mt-2">Redmi Mobile Review</p>
             </div>
 
         </div>
     </div>
 </section>
 
-<!-- Footer -->
+<!-- footer start -->
 <footer class="bg-primary text-white mt-5 pt-4">
     <div class="container">
         <div class="row">
 
+            <!-- About / Logo -->
             <div class="col-md-3 mb-3">
                 <h5 class="fw-bold">Mobile Shop</h5>
-                <p class="small"> We offer quality mobile phones, accessories, and reliable services
-                    at affordable prices to meet everyday needs.</p>
+                <p class="small">
+                    We offer quality mobile phones, accessories, and reliable services
+                    at affordable prices to meet everyday needs.
+                </p>
             </div>
 
+            <!-- Quick Links -->
             <div class="col-md-3 mb-3">
                 <h5 class="fw-bold">Quick Links</h5>
                 <ul class="list-unstyled">
@@ -95,30 +150,41 @@
                 </ul>
             </div>
 
+            <!-- Products -->
             <div class="col-md-3 mb-3">
-                <h5 class="fw-bold">Gallery</h5>
+                <h5 class="fw-bold">Products</h5>
                 <ul class="list-unstyled">
-                    <li>Photos</li>
-                    <li>Videos</li>
+                    <li>Smartphones</li>
+                    <li>Accessories</li>
+                    <li>Chargers</li>
+                    <li>Headphones</li>
                 </ul>
             </div>
 
+            <!-- Address -->
             <div class="col-md-3 mb-3">
-                <h5 class="fw-bold">Contact</h5>
-                <p class="small mb-1">Pimpri, Pune</p>
-                <p class="small mb-1"> 9876543210</p>
-                <p class="small">mobileshop@gmail.com</p>
+                <h5 class="fw-bold">Address</h5>
+                <p class="small mb-1">Pimpri, Pune, Maharashtra</p>
+                <p class="small mb-1"> Phone: 9890372004</p>
+                <p class="small"> Email: mobileshop@gmail.com</p>
             </div>
 
         </div>
 
         <hr class="border-light">
+
+        <!-- Footer Bottom -->
         <div class="text-center pb-3">
             <small>© 2026 Mobile Shop. All Rights Reserved.</small>
         </div>
     </div>
 </footer>
+<!-- footer end -->
 
+
+
+<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
